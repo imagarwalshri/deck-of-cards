@@ -14,4 +14,9 @@ func main() {
 	// Read deck from file, saved previously
 	newCards := newDeckFromFile("my_cards")
 	newCards.print()
+	// shuffle and deal 5 cards
+	shuffledCards := newCards.shuffle()
+	shuffledCards.print()
+	hand, remainingCards = deal(shuffledCards, 5)
+	hand.print()
 }
