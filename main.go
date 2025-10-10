@@ -10,7 +10,7 @@ func main() {
 	// Print remaining cards after deal
 	remainingCards.print()
 	// Save deck of cards to file
-	cards.saveToDisk("my_cards")
+	cards.saveToFile("my_cards")
 	// Read deck from file, saved previously
 	newCards := newDeckFromFile("my_cards")
 	newCards.print()

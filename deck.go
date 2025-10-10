@@ -46,7 +46,7 @@ func (d deck) toString() string {
 }
 
 // save deck to disk
-func (d deck) saveToDisk(filename string) error {
+func (d deck) saveToFile(filename string) error {
 	return os.WriteFile(filename, []byte(d.toString()), 0666)
 }
 

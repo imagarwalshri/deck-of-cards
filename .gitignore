@@ -32,3 +32,4 @@ go.work.sum
 # .vscode/
 
 *my_cards*
+*_decktesting*
